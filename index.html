@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cocktails Recipe Finder App</title>
+
+    <!-- links -->
+    <link rel="stylesheet" href="assets\app.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+     <!--Open Graph -->
+     <meta property="og:type" content="website" />
+     <meta property="og:url" content="https://embracehealthylifestyle.netlify.app/" />
+     <meta property="og:title" content="Cocktails Recipe Finder"/>
+     <meta property="og:description" content="Cocktail Website" />
+     <meta property="og:image" content="%PUBLIC_URL%/../img/Clarence.png"/>
+
+
+  </head>
+  <body>
+    <div class="container">
+      <div class="meal-wrapper">
+        <div class="meal-search">
+          <h2 class="title">Find Cocktails For Your Everyday</h2>
+          <blockquote>
+            All you need is love and cocktails. <br />
+            <cite>- Damel Ekundayo</cite>
+          </blockquote>
+
+          <div class="meal-search-box">
+            <input
+              type="text"
+              class="search-control"
+              placeholder=" Enter a Cocktail "
+              id="search-input"
+            />
+            <button type="submit" class="search-btn btn" id="search-btn">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+
+          <div class="meal-result">
+            <h2 class="title">Your Search Result:</h2>
+            <div id="meal">
+              <!-- meal item -->
+               <!-- <div class="meal-item">
+                <div class="meal-img">
+                  <img src="img/ref-image.jpg" alt="Food" />
+                </div>
+                <div class="meal-name">
+                  <h3>Egusi Soup</h3>
+                  <a href="#" class="recipe-btn"> Get Recipe</a>
+                </div>
+              </div> -->
+              <!-- end of meal item -->
+            </div>
+          </div>
+        </div>
+
+
+        <div class="meal-details">
+            <!-- Recipe close btn -->
+            <button type="button" class="btn recipe-close-btn" id="recipe-close-btn" data-btn>
+                <i class="fas fa-times"></i>
+            </button>
+
+            <!-- meal content// -->
+            <div class="meal-details-content">
+
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets\api.js"></script>
+  </body>
+</html>
